@@ -7,7 +7,7 @@ const CTA = () => {
     return (
         <CTAStyled>
             <a href="mailto:320james@gmail.com" className="btn" target="blank"><SendOutlinedIcon className="send" /> Message</a>
-            <a href="" className="btn-primary" target="blank"><SchoolOutlinedIcon className="school" /> Resume</a>
+            <a href="https://drive.google.com/file/d/1iF6iPUc7jDJ6nRV0y_0DjcNPNhiSIIRp/view?usp=sharing" className="btn-primary" target="blank"><SchoolOutlinedIcon className="school" /> Resume</a>
         </CTAStyled>
     )
 }

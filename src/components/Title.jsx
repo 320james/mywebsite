@@ -30,6 +30,7 @@ const TitleStyled = styled.div`
 
         @media screen and (max-width: 600px) {
             font-size: 1.8rem;
+            padding-left: 1rem;
         }
 
         &::before {
@@ -46,6 +47,7 @@ const TitleStyled = styled.div`
             @media screen and (max-width: 600px) {
                 width: 10rem;
                 bottom: 15%;
+                margin-left: 1rem;
             }
         }
         &::after {
@@ -61,6 +63,7 @@ const TitleStyled = styled.div`
             @media screen and (max-width: 600px) {
                 width: 7rem;
                 bottom: 15%;
+                margin-left: 1rem;
             }
         }
 
@@ -77,6 +80,7 @@ const TitleStyled = styled.div`
 
             @media screen and (max-width: 600px) {
                 font-size: 2.8rem;
+                padding-left: 1rem;
             }
 
         }

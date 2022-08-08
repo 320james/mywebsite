@@ -6,8 +6,8 @@ import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 const CTA = () => {
     return (
         <CTAStyled>
-            <a href="" className="btn"><SendOutlinedIcon className="send" /> Message</a>
-            <a href="" className="btn-primary"><SchoolOutlinedIcon className="school" /> Resume</a>
+            <a href="mailto:320james@gmail.com" className="btn" target="blank"><SendOutlinedIcon className="send" /> Message</a>
+            <a href="" className="btn-primary" target="blank"><SchoolOutlinedIcon className="school" /> Resume</a>
         </CTAStyled>
     )
 }

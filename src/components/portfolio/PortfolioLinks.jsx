@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import GithubIcon from '@material-ui/icons/GitHub';
 import PlayCircleFilledWhiteOutlinedIcon from '@material-ui/icons/PlayCircleFilledWhiteOutlined';
 import BackupOutlinedIcon from '@material-ui/icons/BackupOutlined';
-
-const PortfolioLinks = ({ github, githubLink, video, videoLink, liveDemo, liveDemoLink }) => {
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+const PortfolioLinks = ({ github, githubLink, video, videoLink, liveDemo, liveDemoLink, lock }) => {
     return (
         <PortfolioLinksStyled>
             <div className="icons-container">
@@ -16,6 +16,9 @@ const PortfolioLinks = ({ github, githubLink, video, videoLink, liveDemo, liveDe
                 }
                 {video &&
                     <a href={videoLink} target="blank" className="icon i-video"><PlayCircleFilledWhiteOutlinedIcon /></a>
+                }
+                {lock &&
+                    <div className="icon i-lock"><LockOutlinedIcon /></div>
                 }
             </div>
         </PortfolioLinksStyled>

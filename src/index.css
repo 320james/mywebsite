@@ -2,16 +2,15 @@
 
 :root {
     /* background color */
-    --dark-navy: #0a192f;
-    --light-navy: #112240;
+    --dark-navy: #051122;
+    --light-navy: #0d1a30;
     --hover-navy: #233554;
 
     /* text color */
     --light-gray: #ccd6f6;
     --dark-gray: #1f1f1f;
     --gray: #8892b0;
-    --bright-gree: #64ffda;
-    --primary-color: #64ffda;
+    --primary-color: #02B7DD;
 
     /* media query screen size */
     --container-width-lg: 75%;

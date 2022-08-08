@@ -38,14 +38,14 @@ const Portfolio = () => {
                     pagination={{ clickable: true }}>
 
                     {
-                        showcaseData.map(({ title, image, github, githubLink, video, videoLink, liveDemo, liveDemoLink, technologies, description }, index) => {
+                        showcaseData.map(({ title, image, github, githubLink, video, videoLink, liveDemo, liveDemoLink, technologies, description, lock }, index) => {
                             return (
                                 <SwiperSlide key={index} className="slide">
                                     <div className="content">
                                         <h2>{title}</h2>
                                         <p>{description}</p>
                                         <span>{technologies}</span>
-                                        <PortfolioLinks github={github} githubLink={githubLink} video={video} videoLink={videoLink} liveDemo={liveDemo} liveDemoLink={liveDemoLink} />
+                                        <PortfolioLinks github={github} githubLink={githubLink} video={video} videoLink={videoLink} liveDemo={liveDemo} liveDemoLink={liveDemoLink} lock={lock} />
                                     </div>
                                     <img src={image} alt="" />
 
@@ -133,6 +133,9 @@ const PortfolioStyled = styled.section`
                 position: absolute;
                 bottom: 2rem;
 
+                .icons-container {
+                    justify-content: left;
+                }
 
                 .icon {
                     padding-top: 0.5rem;
@@ -180,7 +183,7 @@ const PortfolioStyled = styled.section`
 
             .slide {
                 position: relative;
-                
+
                 .content {
                     position: absolute;
                     z-index: 5;
@@ -222,7 +225,7 @@ const PortfolioStyled = styled.section`
                         span {
                             font-size: 0.8rem;
                             line-height: 1;
-                            padding-bottom: 1rem;
+                            padding-bottom: 0.1rem;
                         }
 
                     }
@@ -230,9 +233,27 @@ const PortfolioStyled = styled.section`
                 }
 
                 img {
-                    object-fit: contain;
+                    object-fit: cover;
                     opacity: 0.4;
                     border-radius: 2rem;
+                    width: 100%;
+                    height: 44rem;
+
+                    @media screen and (max-width: 1450px) {
+                        height: 33rem;
+                    }
+                    @media screen and (max-width: 1300px) {
+                        height: 28rem;
+                    }
+                    @media screen and (max-width: 1200px) {
+                        height: 25rem;
+                    }
+                    @media screen and (max-width: 1100px) {
+                        height: 23rem;
+                    }
+                    @media screen and (max-width: 500px) {
+                        height: 12rem;
+                    }
                 }
 
             }

@@ -3,17 +3,43 @@ import { GoHome } from 'react-icons/go'
 import { BiUser } from 'react-icons/bi'
 import { GiBookshelf } from 'react-icons/gi'
 import { BiCodeAlt } from 'react-icons/bi'
+import { AiOutlineMessage } from 'react-icons/ai'
 import styled from 'styled-components'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from "framer-motion";
 
 const Nav = () => {
 
     const [activeNav, setActiveNav] = useState("#home");
 
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+            // find current scroll position
+            const currentScrollPos = window.pageYOffset;
+
+            // set state based on location info (explained in more detail below)
+            setVisible(prevScrollPos > currentScrollPos);
+
+            // set state to new scroll position
+            setPrevScrollPos(currentScrollPos);
+
+
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+
+    }, [prevScrollPos, visible]);
+
     return (
 
-        <NavStyled>
+        <NavStyled style={{ bottom: visible ? '1.4rem' : '-5rem' }}>
             <motion.div className="navs"
                 initial={{ opacity: 0 }}
                 animate={{ y: [50, 0] }}
@@ -24,6 +50,7 @@ const Nav = () => {
                 <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><BiUser /></a>
                 <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><GiBookshelf /></a>
                 <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BiCodeAlt /></a>
+                <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><AiOutlineMessage /></a>
 
             </motion.div>
 

@@ -15,7 +15,7 @@ function TechnologiesSection() {
                     {<TechnologiesCard
                         image={web}
                         title={'Web Development'}
-                        paragraph={['HTML & CSS', 'Javascript', 'React.js', 'Node.js', 'Express.js', 'MongoDB']}
+                        paragraph={['HTML & CSS', 'JS ES6+', 'React.js', 'Node.js', 'Express.js', 'MongoDB']}
                     />}
                     {<TechnologiesCard
                         image={mobile}

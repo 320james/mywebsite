@@ -2,71 +2,39 @@
 
 const portfolioData = [
     {
-        title: 'Title 1',
+        title: 'Portfolio Website V1.0',
         github: true,
-        githubLink: "",
-        video: true,
+        githubLink: "https://github.com/320james/320james.github.io",
+        video: false,
         videoLink: "",
         liveDemo: true,
-        liveDemoLink: "",
-        technologies: "React, js",
-        description: "This is a description This is a description This is a description This is a description"
+        liveDemoLink: "https://320james.github.io/",
+        technologies: "React.js",
+        description: "First responsive about me / portfolio website built with React.js, utilizing MaterialUI, styled components, hooks, and routers."
     },
     {
-        title: 'Title 2',
+        title: 'Glassmorph FriendIDs',
         github: true,
-        githubLink: "",
-        video: true,
+        githubLink: "https://github.com/320james/friend-cards",
+        video: false,
         videoLink: "",
         liveDemo: true,
-        liveDemoLink: "",
-        technologies: "React, js",
-        description: "This is a description This is a description This is a description This is a description"
+        liveDemoLink: "https://friend-id-cards.netlify.app/",
+        technologies: "React.js",
+        description: "3D Hover Glassmorphism Cards made with React.js to showcase the personalities and quirks of my close friends."
     },
     {
-        title: 'Title 2',
+        title: 'Coronaviraus Tracker',
         github: true,
-        githubLink: "",
-        video: true,
+        githubLink: "https://github.com/320james/CoronavirusTracker",
+        video: false,
         videoLink: "",
-        liveDemo: true,
+        liveDemo: false,
         liveDemoLink: "",
-        technologies: "React, js",
-        description: "This is a  This is a description description This is a description This is a description This is a description"
+        technologies: "Spring Boot, Java",
+        description: "Application made to track the number of COVID-19 cases reported around the globe using Spring Boot framework."
     },
-    {
-        title: 'Title 1',
-        github: true,
-        githubLink: "",
-        video: true,
-        videoLink: "",
-        liveDemo: true,
-        liveDemoLink: "",
-        technologies: "React, js",
-        description: "This is a description This is a description This is a description This is a description"
-    },
-    {
-        title: 'Title 2',
-        github: true,
-        githubLink: "",
-        video: true,
-        videoLink: "",
-        liveDemo: true,
-        liveDemoLink: "",
-        technologies: "React, js",
-        description: "This is a description This is a description This is a description This is a description"
-    },
-    {
-        title: 'Title 2',
-        github: true,
-        githubLink: "",
-        video: true,
-        videoLink: "",
-        liveDemo: true,
-        liveDemoLink: "",
-        technologies: "React, js",
-        description: "This is a  This is a description description This is a description This is a description This is a description"
-    },
+
 
 
 

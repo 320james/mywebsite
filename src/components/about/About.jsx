@@ -26,10 +26,10 @@ const About = () => {
 
                 <div className="right-content">
                     <h3 className="firstHead">
-                        I am a software engineer at <span>WillowTree®</span>. I am passionate about web development and enjoy creating beautiful and robust applications. I received my Bachelor's degree in Computer Science at <span>Virginia Tech</span>, and I am striving to be better and learn more about what the world of technology has to offer every day.
+                        I am a software engineer at <span>WillowTree®</span>. I am passionate about web development and enjoy creating beautiful and robust digital products. I received my Bachelor's degree in Computer Science at <span>Virginia Tech</span>. I am learning something new every day in the world of software development and striving to contribute value and impact to the advancement of technologies.
                     </h3>
                     <h3>
-                        Aside from programming, I love to lift weights, exploring new places to fish, go camping, and play pick-up basketball!
+                        Aside from programming, I love to lift weights, go on adventures to find the best fishing spots, go camping, and play pick-up basketball!
                     </h3>
                 </div>
             </motion.div>
@@ -91,6 +91,7 @@ const AboutStyled = styled.section`
                 position: relative;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
+                
                 &::before {
                     content: "";
                     position: absolute;
@@ -108,9 +109,15 @@ const AboutStyled = styled.section`
                     }
                 }
 
+
+            }
+
+            h3 {
+                padding-bottom: 1rem;
             }
 
         }
+
 
         
     }

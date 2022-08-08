@@ -39,6 +39,7 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
             >
+                <h2>Let's get in touch.</h2>
                 <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name='name' placeholder="Your Full Name" required />
                     <input type="email" name='email' placeholder="Your Email" required />
@@ -81,6 +82,18 @@ const ContactStyled = styled.section`
                 width: 90%;
             }
 
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            line-height: 1;
+            padding-bottom: 0.4rem;
+            color: var(--light-gray);
+
+            @media screen and (max-width: 600px) {
+                font-size: 1.6rem;
+            }
         }
 
         

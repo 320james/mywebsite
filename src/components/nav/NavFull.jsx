@@ -43,6 +43,14 @@ const NavFull = () => {
             >
                 <a href="#portfolio" onClick={() => setActiveNavFull('#portfolio')} className={activeNavFull === '#portfolio' ? 'active' : ''}>/portfolio</a>
             </motion.div>
+            <motion.div className="navs"
+                initial={{ opacity: 0 }}
+                animate={{ y: [50, 0] }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1.8 }}
+            >
+                <a href="#contact" onClick={() => setActiveNavFull('#contact')} className={activeNavFull === '#contact' ? 'active' : ''}>/contact</a>
+            </motion.div>
 
 
 

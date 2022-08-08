@@ -27,6 +27,7 @@ const Experience = () => {
 const ExperienceStyled = styled.section`
     .layout {
         padding-top: 2rem;
+        min-height: 24rem;
     }
 
     

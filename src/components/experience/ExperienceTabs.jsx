@@ -4,6 +4,8 @@ import Tab from '@material-ui/core/Tab'
 import { withStyles, useMediaQuery } from '@material-ui/core';
 import styled from 'styled-components';
 import { motion } from "framer-motion";
+import Typist from 'react-typist';
+
 
 function ExperienceTabs() {
 
@@ -27,14 +29,13 @@ function ExperienceTabs() {
                 <MyTab label={mediumViewport ? "WillowTree" : "00."} />
                 <MyTab label={mediumViewport ? "Verizon" : "01."} />
                 <MyTab label={mediumViewport ? "Verizon" : "02."} />
-                <MyTab label={mediumViewport ? "Hoppys" : "03."} />
 
             </VerticalTabs>
             <TabContainerStyled>
                 {value === 0 &&
                     <div className="list-content">
-                        <h2>Software Engineer | <span>WillowTree®</span></h2>
-                        <h3>AUG 2022 - CURRENT</h3>
+                        <h2>Software Engineer @ <span>WillowTree®</span></h2>
+                        <h3>AUG 2022 - PRESENT | Charlottesville, VA</h3>
                         <motion.div
                             className="list"
                             initial={{ opacity: 0 }}
@@ -42,7 +43,7 @@ function ExperienceTabs() {
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.2 }}
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus animi debitis laboriosam sapiente laborum illo illum at qui corrupti maxime?
+                            Helping to design and develop exceptional digital experiences to help shape teams and process that drive them forward.
                         </motion.div>
                         <motion.div
                             className="list"
@@ -50,8 +51,11 @@ function ExperienceTabs() {
                             whileInView={{ opacity: 1, y: [100, 0] }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.4 }}
+                            style={{ display: "flex" }}
                         >
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa illo ipsam odit optio nisi dolorum commodi? Deserunt, aperiam atque?
+                            <Typist className="MyTypist">
+                                Loading...
+                            </Typist>
                         </motion.div>
                         <motion.div
                             className="list"
@@ -59,8 +63,11 @@ function ExperienceTabs() {
                             whileInView={{ opacity: 1, y: [100, 0] }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.6 }}
+                            style={{ display: "flex" }}
                         >
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa illo ipsam odit optio nisi dolorum commodi? Deserunt, aperiam atque?
+                            <Typist className="MyTypist">
+                                Building, creating, doing cool things...
+                            </Typist>
                         </motion.div>
                     </div>
 
@@ -68,8 +75,8 @@ function ExperienceTabs() {
                 {value === 1 &&
 
                     <div className="list-content">
-                        <h2>Software Engineer | <span>WillowTree®</span></h2>
-                        <h3>AUG 2022 - CURRENT</h3>
+                        <h2>Software Engineer Intern @ <span>Verizon</span></h2>
+                        <h3>JUN 2021 - AUG 2021 | Basking Ridge, NJ</h3>
                         <motion.div
                             className="list"
                             initial={{ opacity: 0 }}
@@ -77,7 +84,7 @@ function ExperienceTabs() {
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.2 }}
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus animi debitis laboriosam sapiente laborum illo illum at qui corrupti maxime?
+                            Programmed front-end UI/UX features on the recommended accessory item cards alongside the Digital Sales team for smartphone device purchase flow on Verizon’s digital platform.
                         </motion.div>
                         <motion.div
                             className="list"
@@ -86,7 +93,7 @@ function ExperienceTabs() {
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.4 }}
                         >
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa illo ipsam odit optio nisi dolorum commodi? Deserunt, aperiam atque?
+                            Helped to catalyze the digital growth of generating an increase in revenue of accessories from $150M to $395M in 2021.
                         </motion.div>
                         <motion.div
                             className="list"
@@ -95,16 +102,37 @@ function ExperienceTabs() {
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.6 }}
                         >
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa illo ipsam odit optio nisi dolorum commodi? Deserunt, aperiam atque?
+                            Leveraged React.js, media queries, Node.js, Agile, Git, and Jira to enhance the display of product description and dynamic color sku options for accessory product item cards to enhance the digital customer journey.
                         </motion.div>
                     </div>
                 }
                 {value === 2 &&
 
                     <div className="list-content">
+                        <h2>Software Engineer Intern @ <span>Verizon</span></h2>
+                        <h3>JUN 2020 - AUG 2020 | Ashburn, VA</h3>
+                        <motion.div
+                            className="list"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, y: [100, 0] }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                        >
+                            Designed and implemented a full-stack application from scratch that dynamically communicates the availability of Verizon’s conference room services by displaying a static page on multiple channels to promote employee safety during COVID-19.
+                        </motion.div>
+                        <motion.div
+                            className="list"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, y: [100, 0] }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: 0.4 }}
+                        >
+                            Took ownership of developing a sophisticated web application utilizing Spring Boot, JPA, MySQL, REST Services, Git, and Agile.
+                        </motion.div>
 
                     </div>
                 }
+
             </TabContainerStyled>
         </Layout>
     )
@@ -114,6 +142,17 @@ function ExperienceTabs() {
 const Layout = styled.div`
     display: flex;
     flex-direction: row;
+
+    .Typist .Cursor {
+        display: inline-block; 
+        font-size: 19.2px;
+        color: var(--primary-color);
+    }
+  
+    .Typist .Cursor--blinking {
+        opacity: 1;
+        animation: blink 1s linear infinite; 
+    }
 
     @media screen and (max-width: 600px) {
         flex-direction: column;
@@ -187,8 +226,9 @@ const TabContainerStyled = styled.div`
         }
 
         @media screen and (max-width: 600px) {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             text-align: center;
+            
         }
     }
 

@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
 
-    const url = 'https://api.quotable.io/random';
-    const [quote, setQuote] = useState("");
-    const [author, setAuthor] = useState("");
+    // const url = 'https://api.quotable.io/random';
+    // const [quote, setQuote] = useState("");
+    // const [author, setAuthor] = useState("");
 
 
-    useEffect(() => {
-        axios.get(url).then(response => {
-            setQuote(response.data.content);
-            setAuthor(response.data.author);
+    // useEffect(() => {
+    //     axios.get(url).then(response => {
+    //         setQuote(response.data.content);
+    //         setAuthor(response.data.author);
 
-        })
-            .catch(error => console.error(error));
-    }, [])
+    //     })
+    //         .catch(error => console.error(error));
+    // }, [])
 
     return (
         <IntroStyled className="container" id="home">
@@ -39,9 +39,10 @@ const Intro = () => {
                 transition={{ duration: 1 }}
                 className="description">
 
-                <h2>I am a software engineer.</h2>
-                <h3><span>"</span>{quote}<span>"</span></h3>
-                <h3><span>- </span>{author}</h3>
+                <h2>I build, create, and develop things.</h2>
+                <h3>I am a <span>software engineer</span> specializing in building web applications and delivering exceptional digital experiences. It's great to have you here.</h3>
+                {/* <h3><span>"</span>{quote}<span>"</span></h3>
+                <h3><span>- </span>{author}</h3> */}
 
             </motion.div>
 
@@ -84,13 +85,13 @@ const IntroStyled = styled.div`
     }
 
     h2 {
-        font-size: 2.2rem;
+        font-size: 3rem;
         margin-top: -2rem;
         margin-bottom: 0.3rem;
     }
 
     h3 {
-        max-width: 80%;
+        max-width: 60%;
     }
 
 
@@ -109,6 +110,11 @@ const IntroStyled = styled.div`
 
     /* MEDIA QUERIES Sm*/
     @media screen and (max-width: 600px) {
+        
+
+        .description {
+            width: 90%;
+        }
 
         .Typist .Cursor {
             display: inline-block; 
@@ -138,7 +144,6 @@ const IntroStyled = styled.div`
 
         h3 {
             font-size: 1rem;
-            max-width: none;
             line-height: 1.1;
             margin-bottom: 0.5rem;
             word-spacing: 2px;

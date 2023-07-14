@@ -15,20 +15,18 @@ function TechnologiesSection() {
                     {<TechnologiesCard
                         image={web}
                         title={'Web Development'}
-                        paragraph={['HTML & CSS', 'JS ES6+', 'React.js', 'Node.js', 'Express.js', 'MongoDB']}
+                        paragraph={['TS/JS ES6+', 'HTML & CSS', 'ReactJS', 'NextJS', 'NodeJS', 'Express']}
                     />}
                     {<TechnologiesCard
                         image={mobile}
-                        title={'Mobile Development'}
-                        paragraph={['iOS', 'SwiftUI', 'XCode', 'Responsive Web', 'Media Queries', 'Java']}
+                        title={'Mobile'}
+                        paragraph={['React Native', 'Swift', 'iOS', 'Responsive Design', 'Media Queries', 'Mobile First']}
                     />}
                     {<TechnologiesCard
                         image={software}
-                        title={'Software Development'}
-                        paragraph={['Agile', 'OOP', 'Optimization', 'Design Principles', 'Version Control', 'REST Api']}
+                        title={'Software Engineering'}
+                        paragraph={['Agile', 'CI/CD', 'Testing', 'System Design', 'Git', 'REST Api']}
                     />}
-
-
                 </div>
             </TechnologiesSectionStyled>
         </div>

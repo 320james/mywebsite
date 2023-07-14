@@ -16,12 +16,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-
-
 const Portfolio = () => {
     return (
         <PortfolioStyled id="portfolio" className="container">
-            <Title title="</> portfolio" span="</> porfolio" />
+            <Title title="</> projects" span="</> projects" />
 
             <motion.div className="layout"
                 initial={{ opacity: 0 }}
@@ -146,11 +144,6 @@ const PortfolioStyled = styled.section`
             
 
         }
-
-        
-
-        
-
         
         @media screen and (max-width: 1024px) {
             width: 100%;

@@ -4,7 +4,6 @@ import Tab from '@material-ui/core/Tab'
 import { withStyles, useMediaQuery } from '@material-ui/core';
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import Typist from 'react-typist';
 
 
 function ExperienceTabs() {
@@ -43,7 +42,7 @@ function ExperienceTabs() {
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.2 }}
                         >
-                            Helping to design and develop exceptional digital experiences to help shape teams and process that drive them forward.
+                            Spearheaded a greenfield project as the lead web developer for a premium subscription service, rapidly integrating numerous technologies including Next.js, GCP/Firebase, and a multitude of SDK’s, while configuring repositories, setting up CI/CD, and optimizing performance, demonstrating versatility and technical proficiency. Took on full project ownership, making key decisions on architecture and workflow.
                         </motion.div>
                         <motion.div
                             className="list"
@@ -51,11 +50,8 @@ function ExperienceTabs() {
                             whileInView={{ opacity: 1, y: [100, 0] }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.4 }}
-                            style={{ display: "flex" }}
                         >
-                            <Typist className="MyTypist">
-                                Loading...
-                            </Typist>
+                            Operated as an embedded software engineer for a major banking client, delivering five times the initial web component scope in a unique work environment, adapting to the non-traditional Agile methodologies, assuming multiple roles, and driving project management to ensure high client satisfaction and project success.
                         </motion.div>
                         <motion.div
                             className="list"
@@ -63,11 +59,8 @@ function ExperienceTabs() {
                             whileInView={{ opacity: 1, y: [100, 0] }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.6 }}
-                            style={{ display: "flex" }}
                         >
-                            <Typist className="MyTypist">
-                                Building, creating, doing cool things...
-                            </Typist>
+                            Key member of the middleware-backend team for a Fortune 500 client's outdoor mobile application, driving codebase improvements, leading major API version changes integration, and implementing complex features. Championed value-added feature development and upselling opportunities.
                         </motion.div>
                     </div>
 
@@ -143,17 +136,6 @@ const Layout = styled.div`
     display: flex;
     flex-direction: row;
 
-    .Typist .Cursor {
-        display: inline-block; 
-        font-size: 19.2px;
-        color: var(--primary-color);
-    }
-  
-    .Typist .Cursor--blinking {
-        opacity: 1;
-        animation: blink 1s linear infinite; 
-    }
-
     @media screen and (max-width: 600px) {
         flex-direction: column;
         align-items: center;
@@ -167,13 +149,9 @@ const VerticalTabs = withStyles(theme => ({
         '@media screen and (max-width: 600px)': {
             flexDirection: 'row',
         },
-
-
-
     },
     indicator: {
         backgroundColor: 'var(--primary-color)',
-
     }
 
 }))(Tabs)
@@ -228,14 +206,12 @@ const TabContainerStyled = styled.div`
         @media screen and (max-width: 600px) {
             font-size: 1.3rem;
             text-align: center;
-            
         }
     }
 
     h3 {
         font-size: 1.2rem;
         padding-bottom: 1rem;
-
         @media screen and (max-width: 600px) {
             font-size: 1rem;
             text-align: center;

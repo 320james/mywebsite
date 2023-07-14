@@ -26,17 +26,14 @@ const About = () => {
 
                 <div className="right-content">
                     <h3 className="firstHead">
-                        I am a software engineer at <span>WillowTree®</span>. I am passionate about web development and enjoy creating beautiful and robust digital products. I received my Bachelor's degree in Computer Science at <span>Virginia Tech</span>. I am learning something new every day in the world of software development and striving to contribute value and impact to the advancement of technologies.
+                        As a software engineer at <span>WillowTree®</span>, I infuse my love for web development into crafting digital experiences that are both robust and beautiful. A proud graduate from <span>Virginia Tech</span>, I hold a Bachelor's degree in Computer Science, but my education continues daily in the dynamic field of software development. I'm not just assimilating new knowledge; I'm actively striving to contribute, aiming to catalyze the progression of technological innovation.
                     </h3>
                     <h3>
-                        Aside from programming, I love to lift weights, go on adventures to find the best fishing spots, go camping, and play pick-up basketball!
+                        Aside from programming, I am passionate about weightlifting, fly-fishing, skiing, camping, golfing, and basketball.
                     </h3>
                 </div>
             </motion.div>
             <TechnologiesSection />
-
-
-
         </AboutStyled>
     )
 }

@@ -6,20 +6,6 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
 
-    // const url = 'https://api.quotable.io/random';
-    // const [quote, setQuote] = useState("");
-    // const [author, setAuthor] = useState("");
-
-
-    // useEffect(() => {
-    //     axios.get(url).then(response => {
-    //         setQuote(response.data.content);
-    //         setAuthor(response.data.author);
-
-    //     })
-    //         .catch(error => console.error(error));
-    // }, [])
-
     return (
         <IntroStyled className="container" id="home">
             <Typist className="MyTypist">
@@ -38,10 +24,8 @@ const Intro = () => {
                 transition={{ duration: 1 }}
                 className="description">
 
-                <h2>I build, create, and develop things.</h2>
-                <h3>I am a <span>software engineer</span> specializing in building web applications and delivering exceptional digital experiences. It's great to have you here.</h3>
-                {/* <h3><span>"</span>{quote}<span>"</span></h3>
-                <h3><span>- </span>{author}</h3> */}
+                <h2>I develop, engineer, and expand horizons.</h2>
+                <h3>I am a <span>full-stack developer</span> that crafts and delivers exceptional digital experiences.</h3>
 
             </motion.div>
 
@@ -85,8 +69,9 @@ const IntroStyled = styled.div`
 
     h2 {
         font-size: 3rem;
-        margin-top: -2rem;
-        margin-bottom: 0.3rem;
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.5rem;
     }
 
     h3 {

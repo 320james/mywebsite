@@ -4,7 +4,7 @@ import Title from '../Title';
 import { motion } from 'framer-motion';
 import showcaseData from './showcaseData';
 import PortfolioLinks from './PortfolioLinks';
-import portfolioData from './portfolioData';
+// import portfolioData from './portfolioData';
 
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from 'swiper';

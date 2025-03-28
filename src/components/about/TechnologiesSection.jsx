@@ -14,20 +14,28 @@ function TechnologiesSection() {
           {
             <TechnologiesCard
               image={software}
-              title={'Backend / Cloud'}
-              paragraph={['NodeJS', 'Express', 'AWS', 'GCP', 'Java', 'IaC']}
+              title={'Backend + Cloud'}
+              paragraph={[
+                'Node',
+                'Express',
+                'AWS',
+                'GCP',
+                'Java',
+                'ASP.NET Core',
+              ]}
             />
           }
           {
             <TechnologiesCard
               image={web}
-              title={'Web Development'}
+              title={'Web'}
               paragraph={[
                 'TS/JS ES6+',
                 'HTML & CSS',
                 'ReactJS',
                 'NextJS',
                 'Responsive Design',
+                'ARIA',
               ]}
             />
           }
@@ -38,8 +46,8 @@ function TechnologiesSection() {
               paragraph={[
                 'Agile',
                 'CI/CD',
-                'E2E Jest',
-                'Cypress',
+                'E2E Testing',
+                'Automation',
                 'Git',
                 'OAuth 2.0',
               ]}

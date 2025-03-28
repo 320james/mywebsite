@@ -28,7 +28,7 @@ function ExperienceTabs() {
         {value === 0 && (
           <div className="list-content">
             <h2>
-              Platform Software Engineer @ <span>WillowTree®</span>
+              Software Engineer II @ <span>WillowTree®</span>
             </h2>
             <h3>AUG 2022 - PRESENT | Charlottesville, VA</h3>
             <motion.div
@@ -38,16 +38,10 @@ function ExperienceTabs() {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              Directed a greenfield project as the lead developer for a premium
-              subscription service, rapidly integrating numerous technologies
-              including Next.js, GCP, Firebase Hosting + Auth, and a multitude
-              of SDKs to allow seamless payment and subscription experience.
-              Configured project middleware with Next API, set up CI/CD
-              pipelines, and optimized performance, demonstrating versatility
-              and technical proficiency. Took on full project ownership,
-              ensuring successful Agile lifecycle and delivery of the website
-              and middleware for the client, which kick-started an inflow of new
-              subscribers and transaction volume.
+              Led the development of a premium subscription service, integrating
+              secure payments and subscription management via Next.js and Next
+              API middleware. Built CI/CD pipelines and cloud deployment,
+              enabling a successful launch with 500+ users in the first week.
             </motion.div>
             <motion.div
               className="list"
@@ -56,14 +50,12 @@ function ExperienceTabs() {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Integral member of the middleware-backend team for a Fortune 500
-              client's outdoor mobile application, driving significant codebase
-              optimization and advancing microservice architecture. Led the
-              development of major features and implemented Infrastructure as
-              Code (IaC) to streamline AWS cloud infrastructure deployment. Led
-              the integration of social authentication services and API
-              migrations, enabling over 4,000 users to connect through the OIDC
-              protocol.
+              Scaled API services for UVA's newest assessment management
+              platform, consolidating three legacy systems to streamline
+              assessments and user management for 200+ educators across
+              Virginia. Developed backend solutions using ASP.NET Core, C#,
+              Entity Framework, and PostgreSQL, ensuring efficient data
+              processing and seamless front-end integration.
             </motion.div>
             <motion.div
               className="list"
@@ -72,11 +64,22 @@ function ExperienceTabs() {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              Operated as an embedded software engineer for a major banking
-              client, delivering five times the initial web component scope in a
-              unique work environment. Adapted to non-traditional Agile
-              methodologies, assuming multiple roles, and drove project
-              management to ensure high client satisfaction and project success.
+              Optimized Node.js backend microservices for a Fortune 500 outdoor
+              booking application, implementing API integrations and OAuth 2.0
+              to expand user connectivity by 20,000+ users. Automated
+              infrastructure deployment with AWS CDK, managing DynamoDB,
+              CloudWatch, and Lambda functions.
+            </motion.div>
+            <motion.div
+              className="list"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, y: [100, 0] }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.8 }}
+            >
+              Developed a retirement calculator and ADA-compliant web components
+              for a major banking client, enabling 100M+ credit users to plan
+              for retirement with enhanced accessibility.
             </motion.div>
           </div>
         )}

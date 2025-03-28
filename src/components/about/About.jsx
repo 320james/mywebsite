@@ -27,18 +27,17 @@ const About = () => {
 
         <div className="right-content">
           <h3 className="firstHead">
-            As a Platform Software Engineer at <span>WillowTree®</span>, I
-            infuse my love for development into crafting digital experiences
-            that are both robust and beautiful. A proud graduate of{' '}
-            <span>Virginia Tech</span> with a Bachelor's degree in Computer
-            Science, I continue to learn and grow in the dynamic field of
-            software development. My work spans integrating solutions and
-            delivering complex projects, optimizing codebases, and implementing
-            cloud infrastructure, all while adapting to diverse environments. I
-            am not only focused on assimilating new knowledge but also on
-            actively contributing to technological innovation, striving to
-            deliver impactful solutions that enhance client satisfaction and
-            drive business success.
+            As a Software Engineer at II <span>WillowTree®</span>, I infuse my
+            love for development into crafting digital experiences that are both
+            robust and beautiful. A proud graduate of <span>Virginia Tech</span>{' '}
+            with a Bachelor's degree in Computer Science, I continue to learn
+            and grow in the dynamic field of software development. My work spans
+            integrating solutions and delivering complex projects, optimizing
+            codebases, and implementing cloud infrastructure, all while adapting
+            to diverse environments. I am not only focused on assimilating new
+            knowledge but also on actively contributing to technological
+            innovation, striving to deliver impactful solutions that enhance
+            client satisfaction and drive business success.
           </h3>
           <h3>
             Aside from computer-things, I am passionate about fly-fishing,

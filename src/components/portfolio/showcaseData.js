@@ -1,6 +1,7 @@
 import charta from '../../assets/charta.png';
 import wildlife from '../../assets/wildlife.jpg';
 import covidtravel from '../../assets/covidtravel.jpg';
+import analyzer from '../../assets/analyzer.png';
 
 const showcaseData = [
   {
@@ -13,6 +14,18 @@ const showcaseData = [
     technologies: 'Next 15, Node, Postgres, Prisma, NeonDB, Shadcn',
     description:
       'Charta was built to provide a sleek, and modern template to create a web application that adds advanced authentication - along with admin / user dashboard and settings.',
+    lock: false,
+  },
+  {
+    title: 'ReadyTrade',
+    image: analyzer,
+    github: true,
+    githubLink: 'https://github.com/320james/ready-trade',
+    video: false,
+    videoLink: '',
+    technologies: 'Next 15, Node, Shadcn, Cursor',
+    description:
+      'A modern web application built with Next.js that helps fantasy football players analyze potential trades by comparing player values and rankings.',
     lock: false,
   },
   {

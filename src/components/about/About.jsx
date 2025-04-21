@@ -27,17 +27,15 @@ const About = () => {
 
         <div className="right-content">
           <h3 className="firstHead">
-            As a Software Engineer at II <span>WillowTree®</span>, I infuse my
-            love for development into crafting digital experiences that are both
-            robust and beautiful. A proud graduate of <span>Virginia Tech</span>{' '}
-            with a Bachelor's degree in Computer Science, I continue to learn
-            and grow in the dynamic field of software development. My work spans
-            integrating solutions and delivering complex projects, optimizing
-            codebases, and implementing cloud infrastructure, all while adapting
-            to diverse environments. I am not only focused on assimilating new
-            knowledge but also on actively contributing to technological
-            innovation, striving to deliver impactful solutions that enhance
-            client satisfaction and drive business success.
+            I'm a Software Engineer at <span>WillowTree®</span>, where I design
+            and deliver scalable digital solutions across web and cloud
+            platforms. With a Computer Science degree from{' '}
+            <span>Virginia Tech</span>, I bring a strong foundation in software
+            engineering principles, paired with hands-on experience leading
+            complex feature development, optimizing system performance, and
+            shaping infrastructure using modern cloud tooling. I approach
+            problems with a product mindset, balancing technical depth with
+            business impact to drive meaningful outcomes.
           </h3>
           <h3>
             Aside from computer-things, I am passionate about fly-fishing,
